@@ -1,6 +1,6 @@
 {
   "name": "luna-manager-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CLI for luna-manager package",
   "main": "./bin/index.js",
   "scripts": {
@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/XyronLabs/Luna-manager-cli#readme",
   "dependencies": {
-    "luna-manager": "^0.1.2"
+    "luna-manager": "^0.2.0"
   }
 }
