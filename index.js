@@ -24,6 +24,10 @@ switch(process.argv[2]) {
     case '--extensions-update-force':
         LunaManager.Extensions.checkInstalledExtensions(process.cwd(), true)
         break
+    
+    case '--check-latest':
+        LunaManager.checkRemoteBinariesVersion(version => console.log(version))
+        break
 
     default:
         console.log("No valid arguments!")
