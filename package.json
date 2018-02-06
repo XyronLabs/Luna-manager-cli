@@ -1,8 +1,8 @@
 {
   "name": "luna-manager-cli",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "CLI for luna-manager package",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +23,9 @@
   "homepage": "https://github.com/XyronLabs/Luna-manager-cli#readme",
   "dependencies": {
     "luna-manager": "^0.1.1"
-  }
+  },
+  "bin": {
+    "lm":"./bin/index.js"
+  },
+  "preferGlobal": true
 }

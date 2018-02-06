@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const LunaManager = require('luna-manager').LunaManager;
 
 switch(process.argv[2]) {
