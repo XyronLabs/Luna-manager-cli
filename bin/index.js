@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const LunaManager = require('luna-manager').LunaManager;
+const LunaManager = require('luna-manager');
 
 switch(process.argv[2]) {
     case '--update':
@@ -16,15 +16,15 @@ switch(process.argv[2]) {
         break
 
     case '--extensions-install':
-        LunaManager.Extensions.updateExtension(process.cwd(), console.log, process.argv[3])
+        LunaManager.updateExtension(process.cwd(), console.log, process.argv[3])
         break
 
     case '--extensions-update':
-        LunaManager.Extensions.checkInstalledExtensions(process.cwd(), console.log)
+        LunaManager.checkInstalledExtensions(process.cwd(), console.log)
         break
 
     case '--extensions-update-force':
-        LunaManager.Extensions.checkInstalledExtensions(process.cwd(), console.log, true)
+        LunaManager.checkInstalledExtensions(process.cwd(), console.log, true)
         break
     
     case '--check-latest':
