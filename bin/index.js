@@ -26,6 +26,14 @@ switch(process.argv[2]) {
     case '--extensions-update-force':
         LunaManager.checkInstalledExtensions(process.cwd(), console.log, true)
         break
+    case '--extensions-remove':
+        let extensions = LunaManager.checkFolderForExtensions(process.cwd());
+        let extensionsData = [];
+        extensions.forEach(e => {
+            extensionsData.push(require(LunaManager.getExtensionData(process.cwd(), e)));
+        });
+        LunaManager.removeExtension(process.cwd(), console.log, process.argv[3], extensionsData, err => console.error(err))
+        break
     
     case '--check-latest':
         LunaManager.checkRemoteBinariesVersion(version => console.log(version))
