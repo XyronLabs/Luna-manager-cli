@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/XyronLabs/Luna-manager-cli#readme",
   "dependencies": {
-    "luna-manager": "^0.2.9"
+    "luna-manager": "^0.2.10"
   }
 }

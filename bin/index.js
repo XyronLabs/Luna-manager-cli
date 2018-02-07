@@ -32,7 +32,8 @@ switch(process.argv[2]) {
         extensions.forEach(e => {
             extensionsData.push(require(LunaManager.getExtensionData(process.cwd(), e)));
         });
-        LunaManager.removeExtension(process.cwd(), console.log, process.argv[3], extensionsData, err => console.error(err))
+        let selected = extensionsData.find(e => e.path.includes(process.argv[3]))
+        LunaManager.removeExtension(process.cwd(), console.log, selected, extensionsData, err => console.error(err))
         break
     
     case '--check-latest': case '-cl':
