@@ -17,3 +17,4 @@ or
 - ```--extensions-update (-eu)``` : Check for Luna extensions updates
 - ```--extensions-install-force (-euf)``` : Force update all Luna extensions
 - ```--extensions-remove (-er)``` : Remove an extension
+- ```--extensions-list (-el)``` : List installed extensions
