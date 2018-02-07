@@ -1,6 +1,8 @@
 # Luna-manager-cli
 Repo for npm package luna-manager-cli
 
+Luna is a simple 2D game engine, check it out here: https://github.com/XyronLabs/Luna
+
 ## Usage
 ```luna-manager-cli [option]```
 
