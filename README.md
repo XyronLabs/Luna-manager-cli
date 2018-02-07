@@ -4,11 +4,16 @@ Repo for npm package luna-manager-cli
 ## Usage
 ```luna-manager-cli [option]```
 
+or
+
+```lm [option]```
+
 ## Options
 
-- ```--new``` : Create a new Luna project
-- ```--update``` : Check for Luna updates
-- ```--force-update``` : Force download latest Luna binaries
-- ```--extensions-install``` : Install a Luna extension
-- ```--extensions-update``` : Check for Luna extensions updates
-- ```--extensions-install-force``` : Force update all Luna extensions
+- ```--new (-n)``` : Create a new Luna project
+- ```--update (-u)``` : Check for Luna updates
+- ```--update-force (-uf)``` : Force download latest Luna binaries
+- ```--extensions-install (-ei)``` : Install a Luna extension
+- ```--extensions-update (-eu)``` : Check for Luna extensions updates
+- ```--extensions-install-force (-euf)``` : Force update all Luna extensions
+- ```--extensions-remove (-er)``` : Remove an extension
