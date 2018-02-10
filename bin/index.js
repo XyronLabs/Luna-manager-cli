@@ -45,8 +45,16 @@ switch(process.argv[2]) {
         });
         break
     }
-        
-    
+
+    case '--extensions-avaliable': case '-ea': {
+        LunaManager.getRemoteAvaliableExtensions(extensionsData => {
+            extensionsData.forEach(curr => {
+                console.log(`${curr.name} ${curr.version}: path=${curr.path} ${curr.dependencies ? `, dependencies=${curr.dependencies}` : ``}`)
+            });
+        })
+        break
+    }
+
     case '--check-latest': case '-cl':
         LunaManager.checkRemoteBinariesVersion(version => console.log(version))
         break
