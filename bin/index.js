@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const LunaManager = require('luna-manager');
+const zipFolder = require('zip-folder')
 
 switch(process.argv[2]) {
     case '--update': case '-u':
@@ -57,6 +58,13 @@ switch(process.argv[2]) {
 
     case '--check-latest': case '-cl':
         LunaManager.checkRemoteBinariesVersion(version => console.log(version))
+        break
+
+    case '--zip': case '-z':
+        zipFolder(process.cwd(), process.cwd() + "/luna_game.zip", err => {
+            if (err) console.error("Error creating zip file")
+            else console.log("Successfully created zip file!")
+        })
         break
 
     default:
