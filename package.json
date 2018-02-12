@@ -1,6 +1,6 @@
 {
   "name": "luna-manager-cli",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "CLI for luna-manager package",
   "main": "./bin/index.js",
   "scripts": {
